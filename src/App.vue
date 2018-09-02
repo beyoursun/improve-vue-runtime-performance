@@ -4,6 +4,9 @@
       <li>
         <router-link to="/demo-1">Demo1</router-link>
       </li>
+      <li>
+        <router-link to="/demo-2">Demo2</router-link>
+      </li>
     </ul>
     <router-view></router-view>
   </div>
