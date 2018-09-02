@@ -16,7 +16,7 @@ export default {
   data() {
     return {
       data: this.getRandomData(3, 10),
-      expandedKeys: ['1'],
+      expandedKeys: [],
     };
   },
   methods: {
