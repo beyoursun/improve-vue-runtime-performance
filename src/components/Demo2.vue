@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Optimization With v-if</h3>
+    <h3>Optimization With Conditional</h3>
     <tree :data="data" :expanded-keys.sync="expandedKeys"></tree>
   </div>
 </template>

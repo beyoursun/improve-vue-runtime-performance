@@ -1,8 +1,7 @@
 <template>
   <ul class="tree">
     <li
-      v-for="node in nodes"
-      v-if="status[node.key].visible"
+      v-for="node in visibleNodes"
       :key="node.key"
       class="tree-node"
       :style="{ 'padding-left': `${node.level * 16}px` }"
@@ -31,6 +30,9 @@ export default {
   computed: {
     nodes() {
       return this.getNodes(this.data);
+    },
+    visibleNodes() {
+      return this.nodes.filter(node => this.status[node.key].visible);
     },
     status() {
       return this.getStatus(this.nodes);
